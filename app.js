@@ -52,5 +52,5 @@ client.on('ready', () => {
 })
 
 client.on('ready', () => {
-    client.user.setActivity("Ticket bot | 'meb!help")
+    client.user.setActivity("Ticket bot | 's4y!help")
 })
