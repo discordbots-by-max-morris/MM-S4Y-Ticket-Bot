@@ -20,29 +20,40 @@ exports.use = async (client, message, nothing, args, command) => {
                 c.overwritePermissions(message.member, {
                     VIEW_CHANNEL: true
                 })
-                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'ceo'), {
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'SB | Server Bots'), {
+                VIEW_CHANNEL: true
+                })
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'Support Team'), {
+                VIEW_CHANNEL: true
+                })
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'ST | Sales Team'), {
+                VIEW_CHANNEL: true
+                })
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'EST| Emergency Support Team'), {
+                VIEW_CHANNEL: true
+                })
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'BC | Bot Creator'), {
+                VIEW_CHANNEL: true
+                })
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'LC | Logo Creator'), {
                     VIEW_CHANNEL: true
                 })
-                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'cto'), {
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'CS | Console Server Creator'), {
                     VIEW_CHANNEL: true
                 })
-                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'system administrator'), {
+                 c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'SC | Server Creator Team'), {
                     VIEW_CHANNEL: true
                 })
-                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'tier 3'), {
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'CD | Cad Developer'), {
                     VIEW_CHANNEL: true
                 })
-                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'tier 2'), {
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'ST | Staff Team'), {
                     VIEW_CHANNEL: true
                 })
-                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'tier 1'), {
-                    VIEW_CHANNEL: true
-                })
-                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'support team'), {
+                c.overwritePermissions(message.guild.roles.find(r => r.name.toLowerCase() === 'C | Chairman'), {
                     VIEW_CHANNEL: true
                 })
                 message.delete();
-
             }
             await c.send(new Discord.RichEmbed().addField('Subject', `${reason}`).addField('Explain', "Explain in detail what you need for a faster response!" ).setDescription(`Thank you for creating a ticket.\nThe support team will assist you soon!`).setColor(Config.ticketcolor))
         })
